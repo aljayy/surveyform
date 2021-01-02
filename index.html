@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <main>
+    <head>
+      <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1 id="title">
+            Best Anime Survey Form
+          </h1>
+          <p id="description">
+            Which do you think is the best?
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="name">
+              Anime Title
+            </label>
+            <input type="text" name="name" id="name" placeholder="Enter your favorite anime" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">
+              Email
+            </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+          </div>
+          <div class="form-group">
+            <label for="number">
+              Age
+            </label>
+            <input type="number" name="age" id="number" min="1" max="10" placejolder="Age" required/>
+          </div>
+          <div class="form-group">
+            <label for="dropdown">
+              Which option is your favorite genre of anime?
+            </label>
+            <select id="dropdown" name="genre" required>
+              <option disabled selected value>
+                Select your favorite genre
+              </option>
+              <option value="shounen">
+                Shounen
+              </option>
+              <option value="shoujo">
+                Shoujo
+              </option>
+              <option value="seinen">
+                Seinen
+              </option>
+              <option value="josei">
+                Josei
+              </option>
+              <option value="ecchi">
+                Ecchi
+              </option>
+              <option value="harem">
+                Harem
+              </option>
+              <option value="mecha">
+                Mecha
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Would you recommend Tokyo Ghoul?</p>
+            <label>
+              <input name="user-recommend" value="I live and die by TG" type="radio" checked/>
+              I live and die by TG
+            </label>
+            <label>
+              <input name="user-recommend" value="I mean .. it's ok" type="radio" checked/>
+              I mean .. it's ok
+            </label>
+            <label>
+              <input name="user-recommend" value="Nope. Too mainstream" type="radio" checked/>
+              Nope. Too mainstream
+            </label>
+          </div>
+          <div class="form-group">
+            <p>What's your favorite aspect about anime?</p>
+            <select id="favasp" name="favasp" required>
+              <option disabled selected value>
+                Favorite aspect</option>
+              <option value="complex">
+                It's complex plots
+              </option>
+              <option value="adult">
+                The adult focus
+              </option>
+              <option value="animation">
+                The detailed animation
+              </option>
+              <option value="genre">
+                The vast amounts of genres
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>What anime would you buy merchandise from?<span class="clue">(Check all that apply)</span></p>
+            <label>
+              <input name="merchandise" value="aot" type="checkbox"/>
+              Attack on Titan
+            </label>
+            <label>
+              <input name="merchandise" value="one-piece" type="checkbox"/>
+              One Piece
+            </label>
+            <label>
+              <input name="merchandise" value="tokyo-ghoul" type="checkbox"/>
+              Tokyo Ghoul
+            </label>
+            <label>
+              <input name="merchandise" value="prison-school" type="checkbox"/>
+              Prison School
+            </label>
+          </div>
+          <div class="form-group">
+            <p>What do you personally love about anime?</p>
+            <textarea id="comments" name="comment" placeholder="Enter your answer here.. ありがとうございました"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </body>
+  </main>
+</html>
